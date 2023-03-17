@@ -18,7 +18,7 @@ export default function Page() {
             the power of TypeScript.
           </Text>
           <Button className="mt-size-4y" theme="info">
-            Join Waitlist
+            Get Early Access
           </Button>
         </div>
       </div> */}
@@ -32,10 +32,10 @@ export default function Page() {
           <div className="container py-36  max-w-screen-xl">
             <div className="flex flex-col gap-12 lg:flex-row items-center">
               <div className="max-w-lg text-center lg:text-left flex  flex-col items-stretch mx-auto lg:mx-0 lg:items-start">
-                <Text variant="h1" className="max-w-lg ">
+                <Text variant="h1" className="max-w-lg text-5xl">
                   Write CI in TypeScript
                 </Text>
-                <Text className="mt-size-2y text-theme-muted max-w-[15rem] mx-auto lg:mx-0 lg:max-w-xs">
+                <Text size="lg" className="mt-size-2y text-theme-muted max-w-[15rem] mx-auto lg:mx-0 lg:max-w-md">
                   <span className="lg:hidden">
                     Bring the power of TypeScript to your CI pipeline
                   </span>
@@ -44,20 +44,8 @@ export default function Page() {
                   </span>
                 </Text>
 
-                <ul className="my-size-2y hidden lg:block">
-                  {[
-                    "Statement completion",
-                    "Real-time type checking",
-                    "Interactive documentation out of the box",
-                    "Easy to set up"
-                  ].map((item) => (
-                    <Text as="li" key={item}>
-                      <span className="text-theme-primary">✔</span> {item}
-                    </Text>
-                  ))}
-                </ul>
                 <Button size="lg" className="mt-size-4y">
-                  Join Waitlist
+                  Get Early Access
                 </Button>
               </div>
               <div data-theme="info" className="md:max-w-md mx-auto lg:ml-auto w-full relative">
@@ -82,6 +70,18 @@ export default function Page() {
           Cicada is a CI platform that allows you to write your CI in TypeScript. Cicada aims to be
           the best way to set up CI for your projects.
         </Text>
+        <ul className="my-size-2y hidden lg:block">
+                  {[
+                    "Statement completion",
+                    "Real-time type checking",
+                    "Interactive documentation out of the box",
+                    "Easy to set up"
+                  ].map((item) => (
+                    <Text as="li" key={item}>
+                      <span className="text-theme-primary">✔</span> {item}
+                    </Text>
+                  ))}
+                </ul>
       </div>
       <div className="container max-w-screen-xl py-24 border-y border-theme-base">
         <div className="grid md:grid-cols-2 gap-12">
