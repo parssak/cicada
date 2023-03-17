@@ -13,11 +13,14 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: "1rem",
-        sm: "2rem",
-        lg: "4rem",
-        xl: "5rem"
+        sm: "3rem",
+        lg: "6rem",
+        xl: "7rem"
       },
       center: true
+    },
+    transitionTimingFunction: {
+      spring: "cubic-bezier(.175,.885,.32,1.275)"
     }
   },
   variants: {},

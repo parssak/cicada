@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@parssa/universal-ui": "^0.1.76",
+    "@radix-ui/react-accordion": "^1.1.1",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"

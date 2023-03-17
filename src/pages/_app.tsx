@@ -11,7 +11,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="color-scheme" content="light dark" />
       </Head>
-      <UniversalUIConfigProvider config={{ components: {} }}>
+      <UniversalUIConfigProvider config={{
+        components: {
+          button: ({ size }) => { 
+            if (size === 'lg') return 'text-base'
+            return ''
+          }
+      } }}>
         <div className="min-h-screen bg-theme-pure">
           <Component {...pageProps} />
         </div>
